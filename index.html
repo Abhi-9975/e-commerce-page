@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant eCommerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+        }
+        header {
+            background: url('restaurant-header.jpg') center/cover no-repeat;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .menu h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #d32f2f;
+        }
+        .menu-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .dish {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .dish img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .dish:hover img {
+            transform: scale(1.1);
+        }
+        .dish h3 {
+            margin: 10px 0;
+        }
+        .dish p {
+            font-size: 18px;
+            color: #555;
+        }
+        .dish button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .dish button:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Eats</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+    
+    <section class="menu">
+        <h2>Our Special Dishes</h2>
+        <div class="menu-grid">
+            <div class="dish">
+                <img src="pizza.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>$12.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dish">
+                <img src="spaghetti.jpg" alt="Spaghetti Carbonara">
+                <h3>Spaghetti Carbonara</h3>
+                <p>$14.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dish">
+                <img src="salmon.jpg" alt="Grilled Salmon">
+                <h3>Grilled Salmon</h3>
+                <p>$18.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dish">
+                <img src="burger.jpg" alt="Cheese Burger">
+                <h3>Cheese Burger</h3>
+                <p>$10.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dish">
+                <img src="sushi.jpg" alt="Sushi Platter">
+                <h3>Sushi Platter</h3>
+                <p>$22.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Delicious Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>
